@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xudaodao.android.adviewsimple.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.xudaodao.android.adview.InfiniteViewPager
+                android:id="@+id/infiniteviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_circle_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                app:pi_gap="16dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="5dp"
+                app:pi_gap="12dp"
+                app:pi_height="10dp"
+                app:pi_selectColor="#F44336"
+                app:pi_unselectColor="#88F44336"
+                app:pi_width="10dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="0dp"
+                app:pi_gap="12dp"
+                app:pi_height="10dp"
+                app:pi_selectColor="#FFC107"
+                app:pi_unselectColor="#88FFC107"
+                app:pi_width="10dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_round_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="2dp"
+                app:pi_gap="12dp"
+                app:pi_height="4dp"
+                app:pi_selectColor="#03A9F4"
+                app:pi_unselectColor="#8803A9F4"
+                app:pi_width="20dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_circle_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="5dp"
+                app:pi_gap="12dp"
+                app:pi_height="10dp"
+                app:pi_selectColor="#009688"
+                app:pi_strokeColor="#009688"
+                app:pi_strokeWidth="1dp"
+                app:pi_unselectColor="#00000000"
+                app:pi_width="10dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_square_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="0dp"
+                app:pi_gap="12dp"
+                app:pi_height="10dp"
+                app:pi_selectColor="#CDDC39"
+                app:pi_strokeColor="#CDDC39"
+                app:pi_strokeWidth="1dp"
+                app:pi_unselectColor="#00000000"
+                app:pi_width="10dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_round_rectangle_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="4dp"
+                app:pi_gap="12dp"
+                app:pi_height="8dp"
+                app:pi_selectColor="#3E4A61"
+                app:pi_strokeColor="#3E4A61"
+                app:pi_strokeWidth="1dp"
+                app:pi_unselectColor="#00000000"
+                app:pi_width="20dp" />
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_circle_snap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="5dp"
+                app:pi_gap="12dp"
+                app:pi_height="10dp"
+                app:pi_isSnap="true"
+                app:pi_selectColor="#8BC34A"
+                app:pi_unselectColor="#558BC34A"
+                app:pi_width="10dp" />
+
+
+            <cn.xudaodao.android.adview.indicator.DefaultPageIndicator
+                android:id="@+id/indicator_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                app:pi_cornerRadius="2dp"
+                app:pi_gap="12dp"
+                app:pi_height="20dp"
+                app:pi_selectRes="@mipmap/ic_select"
+                app:pi_unselectRes="@mipmap/ic_unselect"
+                app:pi_width="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</cn.xudaodao.android.adviewsimple.NestedScrollView>

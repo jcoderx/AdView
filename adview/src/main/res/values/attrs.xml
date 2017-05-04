@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DefaultPageIndicator">
+        <!-- indicator width, unit dp,default 6dp -->
+        <attr name="pi_width" format="dimension"/>
+        <!-- indicator height,unit dp,default 6dp -->
+        <attr name="pi_height" format="dimension"/>
+        <!-- indicator space between two indicators,unit dp,default 6dp -->
+        <attr name="pi_gap" format="dimension"/>
+        <!-- width of the stroke used to draw the indicators,default 0dp -->
+        <attr name="pi_strokeWidth" format="dimension"/>
+        <!-- color of the stroke used to draw the indicators,default "#ffffff" -->
+        <attr name="pi_strokeColor" format="color"/>
+        <!-- Whether or not the selected indicator snaps to the indicators,default false -->
+        <attr name="pi_isSnap" format="boolean"/>
+        <!-- indicator select color ,default "#ffffff" -->
+        <attr name="pi_selectColor" format="color"/>
+        <!-- indicator unselect color ,default "#88ffffff"  -->
+        <attr name="pi_unselectColor" format="color"/>
+        <!-- indicator corner raduis ,unit dp,default 3dp -->
+        <attr name="pi_cornerRadius" format="dimension"/>
+        <!-- indicator select drawable resource -->
+        <attr name="pi_selectRes" format="reference"/>
+        <!-- indicator unselect drawable resource -->
+        <attr name="pi_unselectRes" format="reference"/>
+    </declare-styleable>
+</resources>
